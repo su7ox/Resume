@@ -43,8 +43,7 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-        
-        /* Header Styles */
+    
         header {
             background: linear-gradient(135deg, var(--primary), var(--accent));
             color: white;
@@ -134,7 +133,6 @@
             background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
         
-        /* Navigation */
         nav {
             background-color: white;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -184,7 +182,7 @@
             width: 100%;
         }
         
-        /* Section Styles */
+
         section {
             padding: 5rem 0;
             background-color: white;
@@ -214,7 +212,6 @@
             border-radius: 2px;
         }
         
-        /* Career Objective */
         .objective-content {
             max-width: 800px;
             margin: 0 auto;
@@ -224,8 +221,7 @@
             color: var(--gray);
             line-height: 1.8;
         }
-        
-        /* Education & Experience */
+
         .timeline {
             position: relative;
             max-width: 800px;
@@ -298,7 +294,6 @@
             color: var(--gray);
         }
         
-        /* Skills */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -344,7 +339,6 @@
             color: var(--primary);
         }
         
-        /* Projects */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -402,7 +396,6 @@
             font-weight: 500;
         }
         
-        /* Achievements */
         .achievements-container {
             max-width: 800px;
             margin: 0 auto;
@@ -437,7 +430,6 @@
             color: var(--gray);
         }
         
-        /* Hobbies */
         .hobbies-container {
             display: flex;
             justify-content: center;
@@ -468,7 +460,6 @@
             margin-bottom: 1rem;
         }
         
-        /* Footer */
         footer {
             background: var(--secondary);
             color: white;
@@ -506,7 +497,7 @@
             font-size: 0.9rem;
         }
         
-        /* Responsive Design */
+
         @media (max-width: 768px) {
             .timeline::before {
                 left: 30px;
@@ -542,7 +533,7 @@
     </style>
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
         <div class="header-pattern"></div>
         <div class="container">
@@ -574,7 +565,6 @@
         </div>
     </header>
     
-    <!-- Navigation -->
     <nav>
         <div class="container">
             <div class="nav-container">
@@ -590,7 +580,6 @@
         </div>
     </nav>
     
-    <!-- Career Objective Section -->
     <section id="objective">
         <div class="container">
             <div class="section-header">
@@ -602,7 +591,6 @@
         </div>
     </section>
     
-    <!-- Education Section -->
     <section id="education" style="background-color: #f1f5f9;">
         <div class="container">
             <div class="section-header">
@@ -637,7 +625,6 @@
         </div>
     </section>
     
-    <!-- Skills Section -->
     <section id="skills">
         <div class="container">
             <div class="section-header">
@@ -673,7 +660,6 @@
         </div>
     </section>
     
-    <!-- Projects Section -->
     <section id="projects" style="background-color: #f1f5f9;">
         <div class="container">
             <div class="section-header">
@@ -699,7 +685,6 @@
         </div>
     </section>
     
-    <!-- Achievements Section -->
     <section id="achievements">
         <div class="container">
             <div class="section-header">
@@ -719,7 +704,6 @@
         </div>
     </section>
     
-    <!-- Hobbies Section -->
     <section id="hobbies" style="background-color: #f1f5f9;">
         <div class="container">
             <div class="section-header">
@@ -744,7 +728,6 @@
         </div>
     </section>
     
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="social-links">
@@ -757,7 +740,6 @@
     </footer>
     
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -772,7 +754,6 @@
             });
         });
         
-        // Sticky navigation
         window.addEventListener('scroll', function() {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
